@@ -58,12 +58,14 @@
 				</ul>
 				</div>
 				<div class="PS1"><p class="at">@</p><p class="amper">~</p>
-				<form id="search" action="https://startpage.com/do/search"> 
+				<!-- <form  onsubmit="submit();" id="search">  -->
+				<form  onsubmit="submit();" id="search" action="https://startpage.com/do/search"> 
 	  			<input type="hidden" name="hl" value="cz" /> 
-	  			<input maxlength="250" size="40" tabindex="1" name="q" value="" autocomplete="off" autofocus /> 
+	  			<input maxlength="250" size="40" tabindex="1" name="q" value="" id="q" autocomplete="off" autofocus onkeyup="search(this.value);" /> 
 	 			<input type="submit" value="go" name="btnG" /> 
 				</form>
 				</div>
 		</div>
 	</body>
+	<script type="text/javascript" src="js/search.js"></script>
 </html>
